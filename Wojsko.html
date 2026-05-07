@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pobór do Wojska - Oddział Słońce</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      background: linear-gradient(135deg, #1f2b1f, #3d4f2f, #6b7a3a, #2e3b1f);
+      color:white;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      overflow:hidden;
+    }
+
+    .overlay{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.35);
+      z-index:0;
+    }
+
+    .center{
+      position:relative;
+      z-index:1;
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .center h1{
+      font-size:4rem;
+      text-transform:uppercase;
+      letter-spacing:5px;
+      text-shadow: 0 0 15px rgba(0,0,0,0.8);
+      border:3px solid rgba(255,255,255,0.3);
+      padding:25px 40px;
+      backdrop-filter: blur(3px);
+      background: rgba(0,0,0,0.2);
+    }
+
+    .footer{
+      position:relative;
+      z-index:1;
+      background: rgba(0,0,0,0.45);
+      padding:25px;
+      text-align:center;
+    }
+
+    .footer h2{
+      margin-bottom:15px;
+      color:#c8d48a;
+      letter-spacing:2px;
+    }
+
+    .info{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+      margin-top:15px;
+    }
+
+    .card{
+      background: rgba(255,255,255,0.08);
+      padding:15px 20px;
+      border-radius:10px;
+      width:250px;
+      box-shadow:0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#d6e29b;
+    }
+
+    @media(max-width:768px){
+      .center h1{
+        font-size:2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="center">
+    <h1>POBÓR DO WOJSKA - Oddział Słońce</h1>
+  </div>
+
+  <div class="footer">
+    <h2>INFORMACJE WOJSKOWE</h2>
+
+    <div class="info">
+
+      <div class="card">
+        <h3>Członkowie</h3>
+        <p>
+          Adam Korba
+          Samantha Kirschling
+          Agata Wiechcińska
+          Hubert Szmyt 
+          Piotrek Koperski
+          Wiesława Polak
+          Paweł Kubica
+          Klara Podlewska
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Dyscyplina</h3>
+        <p>
+          Budowanie charakteru,
+          odpowiedzialności i współpracy zespołowej.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Gotowość</h3>
+        <p>
+          Nowoczesne wyposażenie,
+          szybka reakcja i pełne przygotowanie bojowe.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
